@@ -6,13 +6,14 @@
 //
 
 import Foundation
-struct Restaurante {
+struct Restaurant:Decodable {
     
     let idCity: Int
     let idRegion: Int
     let titulo: String
     let desc: String
     let phone: Int
+    let direc: String
     let long: Double
     let lat: Double
 }

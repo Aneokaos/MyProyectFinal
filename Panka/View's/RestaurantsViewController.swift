@@ -8,29 +8,29 @@
 import Foundation
 import UIKit
 
-class RestaurantesViewController: UIViewController {
+class RestaurantsViewController: UIViewController {
     
-    @IBOutlet weak var restaurantesTableView: UITableView!
+    @IBOutlet weak var restaurantsTableView: UITableView!
     
     var codigo = ""
     
-    var restaurantes: [String] = ["restaurante","restaurante"]
+    var restaurants: [Restaurant] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemPurple
-        restaurantesTableView.dataSource = self
+        restaurantsTableView.dataSource = self
     }
 }
 
-extension RestaurantesViewController: UITableViewDataSource  {
+extension RestaurantsViewController: UITableViewDataSource  {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        restaurantes.count
+        restaurants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-        celda.textLabel?.text = restaurantes[indexPath.row]
+        celda.textLabel?.text = restaurants[indexPath.row].titulo
         return celda
     }
 

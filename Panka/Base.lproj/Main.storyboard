@@ -51,15 +51,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-4S-P7M">
-                                <rect key="frame" x="256" y="358" width="33" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-4S-P7M">
+                                <rect key="frame" x="256" y="348" width="33" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Ir">
                                     <color key="baseForegroundColor" red="0.63294788260000001" green="0.91976243260000001" blue="0.42036831860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Wib-LA-gbb" kind="show" id="UEc-JS-d0z"/>
+                                    <action selector="ir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8I-DP-zhc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1362.3188405797102" y="77.678571428571431"/>
         </scene>
-        <!--Restaurantes View Controller-->
+        <!--Restaurants View Controller-->
         <scene sceneID="2aB-9d-XgS">
             <objects>
-                <viewController id="Wib-LA-gbb" customClass="RestaurantesViewController" customModule="Panka" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestaurantsViewController" id="Wib-LA-gbb" customClass="RestaurantsViewController" customModule="Panka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hKa-Aq-eIi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KjG-Vq-rAd"/>
                     <connections>
-                        <outlet property="restaurantesTableView" destination="l5b-zO-4Pc" id="9r0-qw-HRG"/>
+                        <outlet property="restaurantsTableView" destination="l5b-zO-4Pc" id="Kum-Pm-kVN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Oh-o2-F1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

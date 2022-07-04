@@ -13,9 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var CityDestinyTextField: UITextField!
     
     
-    let citys = ["Lima","Piura","Chiclayo","Arequipa","Pucallpa"]
-    let regiones = ["Costa","Sierra","Selva"]
+    let citys = [
+        City(idCity: 11, nombreCity: "Lima"),
+        City(idCity: 12, nombreCity: "Piura")
+    ]
     
+    let regiones = [
+        Region(idRegion: 1, nombreRegion: "Costa"),
+        Region(idRegion: 2, nombreRegion: "Sierra"),
+        Region(idRegion: 3, nombreRegion: "Selva")
+    ]
+    
+    var cityIdSelect = 0
+    var regionIdSelect = 0
     
     var CitySourcePickerView = UIPickerView ()
     var CityDestinyPickerView = UIPickerView ()
@@ -45,6 +55,25 @@ class ViewController: UIViewController {
         
         
     }
+    @IBAction func ir(_ sender: Any) {
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+               guard let viewController = storyboard.instantiateViewController(withIdentifier: "RestaurantsViewController") as? RestaurantsViewController else {
+
+                   fatalError("no se encontró viewcontroller")
+
+               }
+        viewController.restaurants = RestaurantsLocalRepository().fetchRestaurants().filter { restaurant in
+                        
+            return
+            restaurant.idCity == cityIdSelect && restaurant.idRegion == regionIdSelect
+            
+            
+        }
+        show(viewController, sender: nil)
+    }
+    
 }
 
 
@@ -68,9 +97,9 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView.tag {
         case 1:
-            return citys[row]
+            return citys[row].nombreCity
         case 2:
-            return regiones[row]
+            return regiones[row].nombreRegion
         default:
             return "Data not found"
         }
@@ -78,10 +107,12 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
      switch pickerView.tag {
         case 1:
-         CitySourceTextField.text = citys [row]
+         CitySourceTextField.text = citys[row].nombreCity
+         cityIdSelect = citys[row].idCity
          CitySourceTextField.resignFirstResponder()
         case 2:
-         CityDestinyTextField.text = regiones [row]
+         CityDestinyTextField.text = regiones[row].nombreRegion
+         regionIdSelect = regiones[row].idRegion
          CityDestinyTextField.resignFirstResponder()
         default:
             return
@@ -90,4 +121,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     }
     
+
+
+
+
 

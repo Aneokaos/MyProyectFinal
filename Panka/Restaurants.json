@@ -1,111 +1,509 @@
-[{
-"nombre" : "lima",
-"id": 9,
-"region": [
-{
-"nombre": "costa",
-"id" : 1,
-"restaurantes": [
-    {
-    "titulo" : "La Panchita",
-    "desc" : "Comida Criolla",
+[
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "La Panchita",
+    "desc": "Comida Criolla",
     "phone": 2425957,
-    "long" : -12.076561528493913,
-    "lat" : -77.06395996584128
-    },{
-    "titulo" : "El Bolivariano",
-    "desc" : "Restaurant - Bar",
+    "direc": "C. 2 de Mayo 298, Miraflores 15074",
+    "long": -12.076561528493913,
+    "lat": -77.06395996584128
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "El Bolivariano",
+    "desc": "Restaurant - Bar",
     "phone": 4630434,
-    "long" : -12.076561528493913,
-    "lat" : -77.06395996584128
-    },{
-    "titulo" : "Mercado 28",
-    "desc" : "Mercado Gastronómico",
-    "phone":981395822,
-    "long" : -12.129458129156665,
-    "lat" : -77.02427547751635
-    },{
-    "titulo" : "El Bodegon",
-    "desc" :"Taberna Limeña",
+    "direc":"C. Rosa Toledo 289, Pueblo Libre 15084",
+    "long": -12.076561528493913,
+    "lat": -77.06395996584128
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Mercado 28",
+    "desc": "Mercado Gastronómico",
+    "phone": 981395822,
+    "direc":"Av. Vasco Núñez de Balboa 755, Miraflores 15074",
+    "long": -12.129458129156665,
+    "lat": -77.02427547751635
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "El Bodegon",
+    "desc": "Taberna Limeña",
     "phone": 4444704,
-    "long" : -12.112709850109507,
-    "lat" : -77.03120049434966
-    }
+    "direc": "C. Tarapacá 197, Miraflores 15074",
+    "long": -12.112709850109507,
+    "lat": -77.03120049434966
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Purito Norte",
+    "desc": "Especialista en Pescados, Mariscos y Criollo",
+    "phone": 981592865,
+    "direc": "Av. Nicolás de Piérola 1639, Cercado de Lima 15001",
+    "long": -12.056802169232501,
+    "lat": -77.02639202561132
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "El Gato",
+    "desc": "La Victoria-Peru",
+    "phone": 983431299,
+    "direc": "Javier Luna Pizarro 1252, Cercado de Lima 15033",
+    "long": -12.072658062635638,
+    "lat": -77.02665382425884
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "El Merlin De Cabo Blanco",
+    "desc": "Gastronomía con sazón norteña",
+    "phone": 514700327,
+    "direc": "Av. César Vallejo 1500, Lince 15073",
+    "long": -12.08775689572178,
+    "lat": -77.0472228186912
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Embarcadero 41",
+    "desc": "Gastronomía peruana e internacional",
+    "phone": 2719315,
+    "direc": "C. Alexander Fleming 181, Santiago de Surco 15038",
+    "long": -12.120677636561414,
+    "lat": -76.9964666866721
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Embarcadero 41",
+    "desc": "Gastronomía peruana e internacional",
+    "phone": 2719315,
+    "direc": "Av. Emilio Cavenecia 236, San Isidro 15073",
+    "long": -12.108601601023537,
+    "lat": -77.03842319736042
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "José Antonio",
+    "desc": "El restaurante criollo en Lima",
+    "phone": 3726868,
+    "direc": "Av. de la Floresta 124, San Borja 15037",
+    "long": -12.110501361775063,
+    "lat": -76.98822957939448
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "La Rosa Náutica",
+    "desc": "Una experiencia única e inolvidable",
+    "phone": 4450149,
+    "direc": "Espigón Miraflores, Lima 18, Cto. de Playas, Miraflores",
+    "long": -12.131226188027618,
+    "lat": -77.03618757731597
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "La Gran Concha",
+    "desc": "Restaurante de mariscos",
+    "phone": 6933789,
+    "direc": "Calle A  N° 180, La Victoria",
+    "long": -12.062610687758989,
+    "lat": -77.03307455887831
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Isolina",
+    "desc": "Taberna peruana",
+    "phone": 2475075,
+    "direc": "Av. San Martín 101, Barranco 15063",
+    "long": -12.14762045816483,
+    "lat": -77.02232475327705
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Punto Azul",
+    "desc": "Marisquería",
+    "phone": 4458078,
+    "direc": "Ca. San Martin 595, Miraflores 15074",
+    "long": -12.12637762035738,
+    "lat": -77.02812762127222
+  },
+  {
+    "idCity":11,
+    "idRegion":1,
+    "titulo": "Rinconcito Chinchano",
+    "desc": "Un sabor con historia",
+    "phone": 967392568,
+    "direc": "Av. Los Corales 501, La Victoria 15034",
+    "long": -12.076384462871989,
+    "lat": -77.02076578565776
+  },
+  {
+      "idCity":11,
+      "idRegion":2,
+      "titulo" :"Huancahuasi",
+      "desc" :"Cocina Andina",
+      "phone": 5003901,
+      "direc":"Av. Javier Prado Este 1405, La Victoria 15034",
+      "long" :-12.083434874361183,
+      "lat" :-77.01242759794238
+      
+  },
+  {
+      "idCity":11,
+      "idRegion":2,
+      "titulo" :"Huancahuasi",
+      "desc" :"Sabores Andinos",
+      "phone": 5003901,
+      "direc": "Av. Javier Prado Este 1405, La Victoria 15034",
+      "long" : -12.083434874361183,
+      "lat" :-77.01242759794238
+  },
+  {
+      "idCity":11,
+      "idRegion":2,
+      "titulo" :"Rinconcinto Huancaino",
+      "desc" :"Comida Típica",
+      "phone": 3563719,
+      "direc": "Meliton Carbajal 384, Cercado de Lima 15019",
+      "long" : -12.061885171921467,
+      "lat" :-76.99191914602737
+  },
+  {
+      "idCity":11,
+      "idRegion":2,
+      "titulo" :"Rinconcito Huanuqueño",
+      "desc" :"Restaurant Campestre",
+      "phone":964788451,
+      "direc": "Mz. A Lte. 4 El Gramadal Panamericana Norte km. 32.5 Puente Piedra",
+      "long" : -11.850220205155354,
+      "lat" : -77.08899819426534
+
+  },{
+      "idCity":11,
+      "idRegion":2,
+      "titulo" :"Rinconcito Ayacuchano",
+      "desc" : "Comida Tipica",
+      "phone":999931775,
+      "direc":"Avenida Los Frutales, Los Artesanos 576, Ate 15023",
+      "long" : -12.06409114992059,
+      "lat" : -76.96524885836759
+  }, {
+      "idCity":11,
+      "idRegion":2,
+      "titulo" : "Rinconcito Cajamarquino",
+      "desc" : "Restaurant Campestre",
+      "phone": 2614050,
+      "direc":"Jirón, Jr. Madera 188, Rímac",
+      "long" : -12.037501508735472,
+      "lat" : -77.02757296980023
+  },{
+      "idCity":11,
+      "idRegion":2,
+      "titulo" : "Las Terrazas De Mi Pueblo",
+      "desc" : "Comida Andina",
+      "phone": 946415829,
+      "direc":"Av. Carlos Izaguirre 1975, Los Olivos 15301",
+      "long" : -11.990604899741232,
+      "lat" : -77.08921298572588
+  },{
+      "idCity":11,
+      "idRegion":2,
+      "titulo" : "El Tarwi",
+      "desc" :"Pachamama",
+      "phone": 998241283,
+      "direc":"Pasaje Ayulo, 131 - Jesus Maria - Lima",
+      "long" : -12.072861382579013,
+      "lat" : -77.05113188456686
+  },{
+      "idCity":11,
+      "idRegion":2,
+      "titulo" : "Rinconcito Yungayno",
+      "desc" :"Pachamama",
+      "phone": 4583182,
+      "direc":"Los Eleboros 221 Urb.San Silvestre S.J.L. - Lima",
+      "long" : -12.018723853920482,
+      "lat" : -77.00575938805649
+  }
+  ,{
+      "idCity":11,
+      "idRegion":2,
+      "titulo" : "Cusco",
+      "desc" :"Pachamama",
+      "phone": 4335775,
+      "direc":"Almirante Guisse 934 Jesús María - Lima",
+      "long" : -12.074286982447923,
+      "lat" : -77.03986701201502
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "Sabor a Selva",
+      "desc" :"Auténtico sabor amazónico",
+      "phone": 994644372,
+      "direc":"Av. Universitaria 598 San Miguel, Cercado de Lima",
+      "long" : -12.083748849392434,
+      "lat" : -77.08247690522165
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "Pura Selva",
+      "desc" :"Comidas típicas de la selva",
+      "phone": 5621769,
+      "direc":"Arturo Castillo 2422, Cercado de Lima 15081",
+      "long" : -12.047354868954026,
+      "lat" : -77.07299088499576
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "Mar y Selva",
+      "desc" :"Cocina Amazónica Fusión",
+      "phone": 5557847,
+      "direc":"Av. Tomás Marsano 1195, Surquillo 15038",
+      "long" : -12.115432396158214,
+      "lat" : -77.00992113906277
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "El Tigrillo De La Selva",
+      "desc" :"Restaurant turístico",
+      "phone": 980654014,
+      "direc":"C. los Pinos 140, Lima 15107",
+      "long" : -12.012463788540083,
+      "lat" : -77.08864200995428
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "Mi Pico Rico",
+      "desc" :"Comida típica de la selva",
+      "phone": 967059401,
+      "direc":"Psje. Mz. D lote 8, Baquijano, Callao",
+      "long" : -12.051061668300711,
+      "lat" : -77.11195465351597
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "El Bujurqui",
+      "desc" :"De la selva su comida",
+      "phone": 984320564,
+      "direc":"Av. Antunez de Mayolo 1172, pto. 69 mercado de Covida, Los Olivos",
+      "long" : -11.994440688120909,
+      "lat" : -77.07662139084368
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "El encanto de la selva",
+      "desc" :"Juerga Amazónica",
+      "phone": 993849069,
+      "direc":"Jr. Manuel Candamo#448, Lince 15046",
+      "long" : -12.082211158355616,
+      "lat" : -77.03230592233385
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "El Buchisapa",
+      "desc" :"Sabor a selva",
+      "phone": 979300795,
+      "direc":"Jirón Belgica 1612, La Victoria 15018",
+      "long" : -12.07143106553009,
+      "lat" : -77.01268336498516
+  }
+  ,{
+      "idCity":11,
+      "idRegion":3,
+      "titulo" : "El Aguajal",
+      "desc" :"Tradición Amazónica",
+      "phone": 5239090,
+      "direc":"Sta Cruz de Pachacutec 155, Lima 15301",
+      "long" : -11.992844840972497,
+      "lat" : -77.06448519255301
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "La Santitos",
+      "desc" :"Picantería",
+      "phone": 309475,
+      "direc":"Libertad 1001, Piura 20001",
+      "long" : -5.1984411188154525,
+      "lat" : -80.62646021510226
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "El Cacheton",
+      "desc" :"Platos apetitosos en Piura",
+      "phone": 2614050,
+      "direc":"Calle L, Piura 20009",
+      "long" : -5.184812288877657,
+      "lat" : -80.63291952032101
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "Los Jotitas",
+      "desc" :"Cevichería",
+      "phone": 944489091,
+      "direc":"María Auxiliadora, Piura 20003",
+      "long" : -5.200684517428964,
+      "lat" : -80.62414342784655
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "Las Meches",
+      "desc" :"Cevichería",
+      "phone": 932219916,
+      "direc":"M. Rodriguez, Piura 20007",
+      "long" : -5.185808003124971,
+      "lat" : -80.65014817028954
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "Sabor & Cajon",
+      "desc" :"Restaurant de Pescados y Mariscos",
+      "phone": 969586805,
+      "direc":"Av. Sanchez Cerro Mz O' Lt 10, Piura 20001",
+      "long" : -5.18712270399533,
+      "lat" : -80.64305257762794
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "La Cortez",
+      "desc" :"La Picantería",
+      "phone": 943292978,
+      "direc":"AAHH Buenos Aires E, Piura",
+      "long" : -5.219657248608572,
+      "lat" : -80.65561636469937
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "La Isla",
+      "desc" :"Cevichería",
+      "phone": 969935903,
+      "direc":"Ayacucho 570, Piura 20001",
+      "long" : -5.1972223050338915,
+      "lat" : -80.62833703784942
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "La Chiquita",
+      "desc" :"Restaurante de mariscos",
+      "phone": 933280615,
+      "direc":"Av Progreso 1114, Piura 20003",
+      "long" : -5.2098178778485895,
+      "lat" : -80.62186125409706
+  }
+  ,{
+      "idCity":12,
+      "idRegion":1,
+      "titulo" : "El Bijao Piura",
+      "desc" :"Restaurante de mariscos",
+      "phone": 303490,
+      "direc":"Av Sánchez Cerro 4990, Piura 20001",
+      "long" : -5.188168143727462,
+      "lat" : -80.64004910606177
+  }
+  ,{
+      "idCity":12,
+      "idRegion":2,
+      "titulo" : "El Dorado",
+      "desc" :"Tradicional Sabor Cajamarquino",
+      "phone": 994775113,
+      "direc":"Jr. Arequipa 949, Piura 20001",
+      "long" : -5.197627666628719,
+      "lat" : -80.6278664649942
+  }
+  ,{
+      "idCity":12,
+      "idRegion":2,
+      "titulo" : "Tayanti",
+      "desc" :"Pasión por la cocina",
+      "phone": 922677739,
+      "direc":"Los Ejidos km1.1, Piura 20000",
+      "long" : -5.163649186867105,
+      "lat" : -80.62488436788419
+  }
+  ,{
+      "idCity":12,
+      "idRegion":2,
+      "titulo" : "La Plaza",
+      "desc" :"Fusión gastronómica",
+      "phone": 285000,
+      "direc":"Av. Ramón Mujica s/n Urb, Piura",
+      "long" : -5.181190707545631,
+      "lat" : -80.63080040955339
+  }
+  ,{
+      "idCity":12,
+      "idRegion":2,
+      "titulo" : "Rinconcito Huancabambino",
+      "desc" :"Fusión gastronómica",
+      "phone": 979972760,
+      "direc":"Nuevo Amanecer Mz. U 82 - 26 de Octubre",
+      "long" : -5.158674171628115,
+      "lat" : -80.66945091754565
+  }
+  ,{
+      "idCity":12,
+      "idRegion":3,
+      "titulo" : "Selva y Norte",
+      "desc" :"Comida del Norte y Selva del Perú!",
+      "phone": 931501194,
+      "direc":"Gardenias, Piura 20009",
+      "long" : -5.170416866856109,
+      "lat" : -80.62776147441723
+  }
+  ,{
+      "idCity":12,
+      "idRegion":3,
+      "titulo" : "El nuevo cucharón de la selva",
+      "desc" :"Sabor a selva",
+      "phone": 614016,
+      "direc":"Mz.A-07 Urb. La providencia. Calle don manuel, Piura 20009",
+      "long" : -5.169559021565264,
+      "lat" : -80.62820001841808
+  }
+  ,{
+      "idCity":12,
+      "idRegion":3,
+      "titulo" : "Selva Brava",
+      "desc" :"Restobar",
+      "phone": 969624019,
+      "direc":"Av. Urb San Jose 1921, Piura",
+      "long" : -5.189730666912931,
+      "lat" : -80.64789825425794
+  }
+  ,{
+      "idCity":12,
+      "idRegion":3,
+      "titulo" : "El rincón de la charapita",
+      "desc" :"Especialistas en comida Amazónica",
+      "phone": 957631553,
+      "direc":"Urb.Los Tallanes Mz M lt. 3 segunda etapa",
+      "long" : -5.18491913342582,
+      "lat" : -80.65860325841014
+  }
 ]
-},
-{"nombre": "sierra",
-"id": 2,
-"restaurantes": [
-    {
-        "titulo" :"Huancahuasi",
-        "desc" :"Cocina Andina",
-        "phone": 5003901,
-        "long" :-12.083434874361183,
-        "lat" :-77.01242759794238
-        
-    },
-    {
-        "titulo" :"Rinconcinto Huancaino",
-        "desc" :"Comida Típica",
-        "phone": 3563719,
-        "long" : -12.061885171921467,
-        "lat" :-76.99191914602737
-    },
-    {
-        "titulo" :"Rinconcito Huanuqueño",
-        "desc" :"Restaurant Campestre",
-        "phone":964788451,
-        "long" : -11.850220205155354,
-        "lat" : -77.08899819426534
-
-    },{
-        "titulo" :"Rinconcito Ayacuchano",
-        "desc" : "Comida Tipica",
-        "phone":999931775,
-        "long" : -12.06409114992059,
-        "lat" : -76.96524885836759
-    }, {
-        "titulo" : "Rinconcito Cajamarquino",
-        "desc" : "Restaurant Campestre",
-        "phone": 2614050,
-        "long" : -12.037501508735472,
-        "lat" : -77.02757296980023
-    },{
-        "titulo" : "Las Terrazas De Mi Pueblo",
-        "desc" : "Comida Andina",
-        "phone": 946415829,
-        "long" : -11.990604899741232,
-        "lat" : -77.08921298572588
-    },{
-        "titulo" : "El Tarwi",
-        "desc" :"Pachamama",
-        "phone": 998241283,
-        "long" : -12.072861382579013,
-        "lat" : -77.05113188456686
-    }
-
-
-
-]
-
-
-
-
-
-}
-]
-
-
-
-
-
-
-
-
-}]
-
-    "titulo" :
-    "desc" :
-    "phone":
-    "long" :
-    "lat" :
