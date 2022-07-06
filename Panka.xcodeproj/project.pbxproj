@@ -19,6 +19,7 @@
 		00F6694E287019CD00C1B50E /* RestaurantsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6694D287019CD00C1B50E /* RestaurantsRepository.swift */; };
 		00F669502870C45F00C1B50E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6694F2870C45F00C1B50E /* Region.swift */; };
 		00F669522870C47200C1B50E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F669512870C47200C1B50E /* City.swift */; };
+		ECC85266231121948A01D991 /* Pods_Panka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E996C39911A918BEF14B9C /* Pods_Panka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		00F6694D287019CD00C1B50E /* RestaurantsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsRepository.swift; sourceTree = "<group>"; };
 		00F6694F2870C45F00C1B50E /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		00F669512870C47200C1B50E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		3F9BDD37AEDE8714A0BFDDF8 /* Pods-Panka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panka.release.xcconfig"; path = "Target Support Files/Pods-Panka/Pods-Panka.release.xcconfig"; sourceTree = "<group>"; };
+		7D531DB821A848B3A742ECF0 /* Pods-Panka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panka.debug.xcconfig"; path = "Target Support Files/Pods-Panka/Pods-Panka.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E996C39911A918BEF14B9C /* Pods_Panka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC85266231121948A01D991 /* Pods_Panka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				00BACBD3285A71E200EF8E1E /* Panka */,
 				00BACBD2285A71E200EF8E1E /* Products */,
+				3B4BB87737322BE491EA02A6 /* Pods */,
+				B86CAD0F72574E9F4BB245C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +100,24 @@
 			path = "View's";
 			sourceTree = "<group>";
 		};
+		3B4BB87737322BE491EA02A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D531DB821A848B3A742ECF0 /* Pods-Panka.debug.xcconfig */,
+				3F9BDD37AEDE8714A0BFDDF8 /* Pods-Panka.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B86CAD0F72574E9F4BB245C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6E996C39911A918BEF14B9C /* Pods_Panka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00BACBE5285A71E300EF8E1E /* Build configuration list for PBXNativeTarget "Panka" */;
 			buildPhases = (
+				9C3947AA579BA2B337AE7637 /* [CP] Check Pods Manifest.lock */,
 				00BACBCD285A71E200EF8E1E /* Sources */,
 				00BACBCE285A71E200EF8E1E /* Frameworks */,
 				00BACBCF285A71E200EF8E1E /* Resources */,
@@ -159,6 +185,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C3947AA579BA2B337AE7637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Panka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00BACBCD285A71E200EF8E1E /* Sources */ = {
@@ -316,6 +367,7 @@
 		};
 		00BACBE6285A71E300EF8E1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D531DB821A848B3A742ECF0 /* Pods-Panka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -343,6 +395,7 @@
 		};
 		00BACBE7285A71E300EF8E1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9BDD37AEDE8714A0BFDDF8 /* Pods-Panka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
