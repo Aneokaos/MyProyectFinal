@@ -29,9 +29,19 @@ extension RestaurantsViewController: UITableViewDataSource  {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-        celda.textLabel?.text = restaurants[indexPath.row].titulo
+        guard let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as? RestaurantTableViewCell else {
+            return UITableViewCell ()
+        }
+        
+        let restaurant = restaurants[indexPath.row]
+        //celda.textLabel?.text = restaurants[indexPath.row].titulo
+    
+        celda.configure(restaurant: restaurant)
+        
         return celda
     }
+    
+    
+    
 
 }

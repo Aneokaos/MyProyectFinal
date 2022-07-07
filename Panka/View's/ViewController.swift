@@ -57,21 +57,31 @@ class ViewController: UIViewController {
     }
     @IBAction func ir(_ sender: Any) {
     
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var city = CitySourceTextField.text ?? ""
+        var region = CityDestinyTextField.text ?? ""
+        
+        if !city.isEmpty && !region.isEmpty {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-               guard let viewController = storyboard.instantiateViewController(withIdentifier: "RestaurantsViewController") as? RestaurantsViewController else {
+                   guard let viewController = storyboard.instantiateViewController(withIdentifier: "RestaurantsViewController") as? RestaurantsViewController else {
 
-                   fatalError("no se encontró viewcontroller")
+                       fatalError("no se encontró viewcontroller")
 
-               }
-        viewController.restaurants = RestaurantsLocalRepository().fetchRestaurants().filter { restaurant in
-                        
-            return
-            restaurant.idCity == cityIdSelect && restaurant.idRegion == regionIdSelect
+                   }
+            viewController.restaurants = RestaurantsLocalRepository().fetchRestaurants().filter { restaurant in
+                            
+                return
+                restaurant.idCity == cityIdSelect && restaurant.idRegion == regionIdSelect
+                
+                
+            }
             
+            CitySourceTextField.text = ""
+            CityDestinyTextField.text = ""
             
+            show(viewController, sender: nil)
         }
-        show(viewController, sender: nil)
+        
     }
     
 }

@@ -16,6 +16,7 @@ struct Restaurant:Decodable {
     let direc: String
     let long: Double
     let lat: Double
+    let url: String
 }
 
 
