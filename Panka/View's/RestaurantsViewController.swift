@@ -20,10 +20,11 @@ class RestaurantsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemPurple
         restaurantsTableView.dataSource = self
+        restaurantsTableView.delegate = self
     }
 }
 
-extension RestaurantsViewController: UITableViewDataSource  {
+extension RestaurantsViewController: UITableViewDataSource, UITableViewDelegate  {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         restaurants.count
     }
@@ -42,6 +43,14 @@ extension RestaurantsViewController: UITableViewDataSource  {
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "DetailRestaurantViewController") as? DetailRestaurantViewController else {fatalError("no se encontró viewcontroller")
+               }
+        viewController.restaurant = restaurants[indexPath.row]
+        show(viewController, sender: nil)
+    }
     
 
 }
+
