@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!

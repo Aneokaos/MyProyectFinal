@@ -58,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001372EC287799030061F254 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				00F6694D287019CD00C1B50E /* RestaurantsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		00BACBC8285A71E200EF8E1E = {
 			isa = PBXGroup;
 			children = (
@@ -79,10 +87,10 @@
 		00BACBD3285A71E200EF8E1E /* Panka */ = {
 			isa = PBXGroup;
 			children = (
+				001372EC287799030061F254 /* Repository */,
 				00EA51CB28761A510075D34B /* Struct's */,
 				00BACBD4285A71E200EF8E1E /* AppDelegate.swift */,
 				00BACBD6285A71E200EF8E1E /* SceneDelegate.swift */,
-				00F6694D287019CD00C1B50E /* RestaurantsRepository.swift */,
 				00F66947286FA55A00C1B50E /* Restaurants.json */,
 				00F669532870C48500C1B50E /* View's */,
 				00BACBDA285A71E200EF8E1E /* Main.storyboard */,

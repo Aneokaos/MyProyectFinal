@@ -106,7 +106,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-zO-4Pc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" rowHeight="94" id="OB6-rp-lfr" customClass="RestaurantTableViewCell" customModule="Panka" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="94"/>
@@ -124,7 +124,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfw-27-Igt">
                                                     <rect key="frame" x="115" y="16" width="269" height="62"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -201,7 +201,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Wnq-xC-B8E"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -210,7 +210,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="gDj-yb-P5i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -219,7 +219,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="GRC-yO-8EZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -228,13 +228,16 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="BNt-us-zSw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gye-av-6c7">
+                                <rect key="frame" x="0.0" y="459" width="414" height="373"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nou-VY-biT"/>
-                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="5bR-rd-dAn" firstAttribute="leading" secondItem="Nou-VY-biT" secondAttribute="leading" constant="10" id="5fa-2w-oBh"/>
@@ -244,19 +247,24 @@
                             <constraint firstItem="Nou-VY-biT" firstAttribute="trailing" secondItem="PQV-el-8KX" secondAttribute="trailing" id="K3W-ki-Zw7"/>
                             <constraint firstItem="Nou-VY-biT" firstAttribute="trailing" secondItem="lWl-iE-tsC" secondAttribute="trailing" id="L7C-cG-bqN"/>
                             <constraint firstItem="s4t-0s-0Xd" firstAttribute="leading" secondItem="Nou-VY-biT" secondAttribute="leading" constant="5" id="LzX-Oa-biK"/>
+                            <constraint firstItem="Nou-VY-biT" firstAttribute="trailing" secondItem="Gye-av-6c7" secondAttribute="trailing" id="Nwh-sc-y7d"/>
                             <constraint firstItem="lWl-iE-tsC" firstAttribute="leading" secondItem="Nou-VY-biT" secondAttribute="leading" constant="10" id="R6K-ye-91z"/>
                             <constraint firstItem="UxM-De-2NX" firstAttribute="top" secondItem="lWl-iE-tsC" secondAttribute="bottom" constant="10" id="UlG-h6-6G2"/>
                             <constraint firstItem="PQV-el-8KX" firstAttribute="top" secondItem="5bR-rd-dAn" secondAttribute="bottom" constant="10" id="V5W-zZ-Awz"/>
+                            <constraint firstItem="Nou-VY-biT" firstAttribute="bottom" secondItem="Gye-av-6c7" secondAttribute="bottom" constant="30" id="WWA-mn-H2q"/>
                             <constraint firstItem="Nou-VY-biT" firstAttribute="trailing" secondItem="UxM-De-2NX" secondAttribute="trailing" id="YJP-tw-xqS"/>
                             <constraint firstItem="PQV-el-8KX" firstAttribute="leading" secondItem="Nou-VY-biT" secondAttribute="leading" constant="10" id="ZYC-2b-KUQ"/>
                             <constraint firstItem="lWl-iE-tsC" firstAttribute="top" secondItem="PQV-el-8KX" secondAttribute="bottom" constant="10" id="bpr-h3-fD3"/>
+                            <constraint firstItem="Gye-av-6c7" firstAttribute="leading" secondItem="Nou-VY-biT" secondAttribute="leading" id="dWW-lS-YB8"/>
                             <constraint firstItem="UxM-De-2NX" firstAttribute="leading" secondItem="Nou-VY-biT" secondAttribute="leading" constant="10" id="pPD-Un-KPO"/>
                             <constraint firstItem="Nou-VY-biT" firstAttribute="trailing" secondItem="s4t-0s-0Xd" secondAttribute="trailing" constant="5" id="wHT-gZ-7LQ"/>
+                            <constraint firstItem="Gye-av-6c7" firstAttribute="top" secondItem="UxM-De-2NX" secondAttribute="bottom" constant="30" id="xef-p3-TJB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="UxM-De-2NX" id="IW1-JI-PXP"/>
                         <outlet property="descripLabel" destination="PQV-el-8KX" id="E0z-wc-24u"/>
+                        <outlet property="mapView" destination="Gye-av-6c7" id="o7A-Tb-2tW"/>
                         <outlet property="phoneLabel" destination="lWl-iE-tsC" id="yM6-zv-rYU"/>
                         <outlet property="restaurantImageView" destination="s4t-0s-0Xd" id="JVR-Gm-RzU"/>
                         <outlet property="tituloLabel" destination="5bR-rd-dAn" id="qsq-Ed-fHQ"/>
@@ -271,9 +279,6 @@
         <image name="Cocina 5" width="1024" height="683"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

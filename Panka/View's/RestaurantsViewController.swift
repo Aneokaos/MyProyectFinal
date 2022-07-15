@@ -12,7 +12,7 @@ class RestaurantsViewController: UIViewController {
     
     @IBOutlet weak var restaurantsTableView: UITableView!
     
-    var codigo = ""
+    //var codigo = ""
     
     var restaurants: [Restaurant] = []
     
@@ -35,8 +35,6 @@ extension RestaurantsViewController: UITableViewDataSource, UITableViewDelegate 
         }
         
         let restaurant = restaurants[indexPath.row]
-        //celda.textLabel?.text = restaurants[indexPath.row].titulo
-    
         celda.configure(restaurant: restaurant)
         
         return celda
